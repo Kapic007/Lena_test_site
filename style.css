@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import "zero.css";
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+.header {
+  width: 100%;
+  height: 100%;
+}
+.header__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.header__video {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  overflow: hidden;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.header__name {
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.heder__name_title {
+  font-size: 10vh;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px black;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+.modal-img {
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.content {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.content__wrapper {
+  justify-content: center;
+}
+.content__about {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.content__about_title {
+  font-size: 3vh;
+  line-height: 45px;
+  margin: 5% 5% 5% 5%;
+  max-width: 1600px;
+}
+.content__container {
+  display: flex;
+  align-self: center;
+}
+@media screen and (max-width: 769px) {
+  .content__container {
+    flex-direction: column;
+  }
+  .heder__name_title {
+    font-size: 8vh;
+  }
+  .content__about_title {
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width: 374px) {
+  .content__container {
+    flex-direction: column;
+  }
+  .heder__name_title {
+    font-size: 5vh;
+  }
+  .content__about_title {
+    font-size: 2vh;
+  }
+  .content__text_title {
+    font-size: 1.5vh;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .content__text_text {
+    font-size: 1vh;
+    max-width: 640px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 15px;
+    letter-spacing: 0.4px;
+  }
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+.content__image {
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+.image-border {
+}
+.image-border:hover {
+  box-shadow: 15px 15px 20px 0 gray;
+  transition: 1s;
+  transform: translate(-10px, -10px);
+}
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+.image:hover {
+  opacity: 1;
+  transition: 1s;
+  cursor: pointer;
+}
+@media screen and (max-width: 374px) {
+  .image {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 769px) {
+  .image {
+    opacity: 1;
+  }
+}
+.content__text {
+  padding: 20px 0 20px 10px;
+  display: block;
+  flex-direction: column;
+  border-left: gray solid 1px;
+}
+.content__text_title {
+  font-size: 3vh;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 35px;
+  max-width: 640px;
+}
+.content__text_text {
+  font-size: 2vh;
+  max-width: 640px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.footer__icons {
+  display: flex;
+}
+.footer__adress {
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  margin: 35px;
+}
+.footer__adress a {
+  margin-left: 30px;
+  margin-right: 30px;
+  color: white;
+}
+.icon {
+  display: block;
+  margin: 25px;
+}
+.fab,
+.fas {
+  font-size: 50px;
+  color: white;
+}
+.fab:hover,
+.fas:hover {
+  color: bisque;
+}
