@@ -178,6 +178,7 @@ video {
   display: block;
   flex-direction: column;
   border-left: gray solid 1px;
+  align-self:flex-start;
 }
 .content__text_title {
   font-size: 3vh;
